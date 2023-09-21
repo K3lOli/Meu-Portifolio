@@ -64,9 +64,9 @@ export function Body({ isDarkMode, screenWidth }: Props) {
                 I&apos;m an electrical engineering student passionate about
                 technology and how it can improve the world.
               </p>
-              <div className="flex gap-5 mt-14">
-                <Button>CONTACT ME</Button>
-                <Button>KNOW MORE</Button>
+              <div className="flex gap-5 mt-14 justify-center text-xs">
+                <Button><p>CONTACT ME</p></Button>
+                <Button><p>KNOW MORE</p></Button>
               </div>
               <div className="flex mt-8 gap-5">
                 <Image
