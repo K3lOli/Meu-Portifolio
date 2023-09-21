@@ -5,7 +5,7 @@ import elipse3 from "../../../assets/Ellipse 21.svg";
 
 export function Background() {
   return (
-    <div>
+    <div className="">
       <Image
         src={elipse1}
         alt="Picture of the author"
