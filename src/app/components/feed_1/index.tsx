@@ -8,6 +8,7 @@ import linkedin from "../../assets/devicon_linkedin.svg";
 import { TypeAnimation } from "react-type-animation";
 import { Button } from "../button";
 import { Background } from "../background/feed_1";
+import { Background_mobile } from './../background/feed_1/mobile/index';
 
 interface Props {
   isDarkMode: boolean | undefined;
@@ -58,7 +59,7 @@ export function Body({ isDarkMode, screenWidth }: Props) {
               <p
                 className={`${
                   isDarkMode ? "text-white" : "text-BlueH"
-                } text-[1rem] font-lSpartan font-[500] h-min mt-8 text-center`}
+                } text-[1rem] font-lSpartan font-[500] h-min mt-8 ml-10 mr-10 text-center`}
               >
                 I&apos;m an electrical engineering student passionate about
                 technology and how it can improve the world.
@@ -86,7 +87,7 @@ export function Body({ isDarkMode, screenWidth }: Props) {
               </div>
             </div>
           </div>
-          <Background />
+          <Background_mobile />
         </div>
       ) : (
         <div
