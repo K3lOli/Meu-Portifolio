@@ -44,7 +44,7 @@ export function Body_3({ isDarkMode, screenWidth }: Props) {
       ) : (
         <div>
           <div
-            className="flex w-[100vw] justify-center mt-56 min-[1600px]:mr-[20rem] min-[1080px]:mr-[10rem] items-center overflow-hidden"
+            className="flex w-[100vw] justify-center mt-56 min-[1600px]:mr-[20rem] min-[1080px]:mr-[10rem] items-center overflow-y-hidden"
             id="feed3"
           >
             <div className="flex min-[1600px]:mt-20 min-[1080px]:mt-0 leading-none mb-20">

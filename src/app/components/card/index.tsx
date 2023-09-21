@@ -11,7 +11,7 @@ interface Props {
 export function Card({ screenWidth }: Props) {
   return (
     <div>
-      <div className={`flex ${screenWidth <= 1024 ? "gap-10" : "gap-20"} mb-96`}>
+      <div className={`flex ${screenWidth <= 1024 ? "gap-10" : "gap-20"} mb-64`}>
         <div
           className={`shadow-slate-700 shadow-2xl rounded transition-all duration-300 ${
             screenWidth <= 500 ? "scale-90 hover:scale-95" : ""

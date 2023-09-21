@@ -6,7 +6,7 @@ import { Body_2 } from "./components/feed_2";
 import { Body_3 } from "./components/feed3/index";
 import { DarkModeButton } from "./components/darkModeButton";
 import { useEffect, useState } from "react";
-import { div } from "three/examples/jsm/nodes/Nodes.js";
+import { Footer } from "./components/footer";
 
 export default function Home() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -24,13 +24,10 @@ export default function Home() {
       setScreenWidth(window.innerWidth);
     };
 
-    // Adicionar um ouvinte de redimensionamento quando o componente for montado
     window.addEventListener("resize", updateWindowDimensions);
 
-    // Chamar a função de atualização inicialmente
     updateWindowDimensions();
 
-    // Remover o ouvinte de redimensionamento quando o componente for desmontado
     return () => {
       window.removeEventListener("resize", updateWindowDimensions);
     };
@@ -38,23 +35,35 @@ export default function Home() {
 
   return (
     <body
-      className={`h-auto w-full flex max-[1080px]:w-100vw ${
+      className={`h-full w-full flex max-[1080px]:w-100vw ${
         isDarkMode
           ? "bg-black"
           : "bg-gradient-to-r from-[#9FB4E9] to-[#C6D5FC]]"
       } overflow-x-hidden`}
     >
       <div>
-        
-        {isLoading ? <div className="flex justify-center items-center h-screen w-screen">
-          <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-violet-900"></div>
-        </div> : <div>
-        <DarkModeButton isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} />
-        <Header isDarkMode={isDarkMode} />
-        <Body isDarkMode={isDarkMode} screenWidth={screenWidth} />
-        <Body_2 isDarkMode={isDarkMode} screenWidth={screenWidth} />
-        <Body_3 isDarkMode={isDarkMode} screenWidth={screenWidth} /></div>}
-        
+        {isLoading ? (
+          <div className="flex h-screen w-screen items-center justify-center">
+          
+            <svg className="mr-3 h-20 w-20 animate-spin text-violet-800" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+              <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+              <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+            </svg>
+          
+        </div>
+        ) : (
+          <div>
+            <DarkModeButton
+              isDarkMode={isDarkMode}
+              setIsDarkMode={setIsDarkMode}
+            />
+            <Header isDarkMode={isDarkMode} />
+            <Body isDarkMode={isDarkMode} screenWidth={screenWidth} />
+            <Body_2 isDarkMode={isDarkMode} screenWidth={screenWidth} />
+            <Body_3 isDarkMode={isDarkMode} screenWidth={screenWidth} />
+            <Footer isDarkMode={isDarkMode} />
+          </div>
+        )}
       </div>
     </body>
   );

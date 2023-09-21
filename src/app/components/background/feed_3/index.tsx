@@ -9,17 +9,17 @@ export function Background_3() {
         <Image
           src={elipse2}
           alt="Picture of the author"
-          className="absolute w-3/4 top-[2000px] right-10 z-[-10] animate-pingPing overflow-hidden"
+          className="absolute w-3/4 bottom-[-2000px] right-10 z-[-10] animate-pingPing overflow-hidden"
         />
         <Image
           src={elipse1}
           alt="Picture of the author"
-          className="absolute w-3/4 top-[2000px] right-10 z-[-10] animate-pingPing2 overflow-hidden"
+          className="absolute w-3/4 bottom-[-2000px] right-10 z-[-10] animate-pingPing2 overflow-hidden"
         />
         <Image
           src={elipse3}
           alt="Picture of the author"
-          className="absolute w-3/4 top-[2000px] right-10 z-[-10] animate-pingPing3 overflow-hidden"
+          className="absolute w-3/4 bottom-[-2000px] right-10 z-[-10] animate-pingPing3 overflow-hidden"
         />
     </div>
   );
