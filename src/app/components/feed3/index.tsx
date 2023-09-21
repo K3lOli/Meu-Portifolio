@@ -11,7 +11,7 @@ interface Props {
 export function Body_3({ isDarkMode, screenWidth }: Props) {
   return (
     <div>
-      {screenWidth <= 500 ? (
+      {screenWidth <= 1024 ? (
         <div>
           <div
             className="flex w-[100vw] justify-center mt-56 min-[1600px]:mr-[20rem] min-[1080px]:mr-[10rem] items-center overflow-hidden"

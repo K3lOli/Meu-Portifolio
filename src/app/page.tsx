@@ -12,15 +12,21 @@ export default function Home() {
   const [screenWidth, setScreenWidth] = useState<number>(0);
 
   useEffect(() => {
-    const handleResize = () => {
+    const updateWindowDimensions = () => {
       setScreenWidth(window.innerWidth);
     };
 
-    window.addEventListener('resize', handleResize);
+    // Adicionar um ouvinte de redimensionamento quando o componente for montado
+    window.addEventListener('resize', updateWindowDimensions);
 
+    // Chamar a função de atualização inicialmente
+    updateWindowDimensions();
+
+    // Remover o ouvinte de redimensionamento quando o componente for desmontado
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener('resize', updateWindowDimensions);
     };
+
   }, []);
 
   return (

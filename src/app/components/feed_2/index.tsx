@@ -11,13 +11,13 @@ import { Background_2_mobile } from '../background/feed_2/mobile/index';
 
 interface Props {
   isDarkMode: boolean | undefined;
-  screenWidth: number;
+  screenWidth: number ;
 }
 
 export function Body_2({ isDarkMode, screenWidth }: Props) {
   return (
     <div>
-      {screenWidth <= 500 ? (
+      {screenWidth <= 1024 ? (
         <div>
           <div className="flex-col items-center mt-40 w-full" id="feed2">
             <div className="flex w-full justify-center">
