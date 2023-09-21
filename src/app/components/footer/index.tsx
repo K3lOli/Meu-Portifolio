@@ -17,7 +17,7 @@ export function Footer({ isDarkMode }: Props) {
             isDarkMode ? "text-violet-50" : "text-BlueH"
           } text-[3rem] w-auto text-center mb-4`}
         >
-          Let&pos;s Talk?
+          Let&apos;s Talk?
         </h1>
         <Button>CONTACT ME</Button>
       </div>
