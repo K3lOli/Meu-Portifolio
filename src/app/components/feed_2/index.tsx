@@ -124,7 +124,7 @@ export function Body_2({ isDarkMode, screenWidth }: Props) {
                 </p>
               </div>
             </div>
-            <Image src={aboutMe} alt="Picture of the author" className="mt-0 w-80 mr-40npm" />
+            <Image src={aboutMe} alt="Picture of the author" className="mt-0 w-80 mr-40" />
           </div>
           <div
             className={`${
