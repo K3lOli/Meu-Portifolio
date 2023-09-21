@@ -9,22 +9,22 @@ export function Background_mobile() {
       <Image
         src={elipse1}
         alt="Picture of the author"
-        className="absolute top-10 right-10 z-[-10] animate-pulse overflow-hidden"
+        className="absolute top-10 right-16 z-[-10] animate-pulse overflow-hidden"
       />
       <Image
         src={elipse2}
         alt="Picture of the author"
-        className="absolute top-10 right-10 z-[-10] animate-pulse overflow-hidden"
+        className="absolute top-10 right-16 z-[-10] animate-pulse overflow-hidden"
       />
       <Image
         src={elipse3}
         alt="Picture of the author"
-        className="absolute top-10 right-10 z-[-10] animate-pulse overflow-hidden"
+        className="absolute top-10 right-16 z-[-10] animate-pulse overflow-hidden"
       />
       <Image
         src={elipse3}
         alt="Picture of the author"
-        className="absolute top-6 left-10 z-[-10] animate-pulse overflow-hidden"
+        className="absolute top-10 right-16 z-[-10] animate-pulse overflow-hidden"
       />
     </div>
   );
