@@ -17,7 +17,7 @@ interface Props {
 export function Body_2({ isDarkMode, screenWidth }: Props) {
   return (
     <div>
-      {screenWidth <= 1024 ? (
+      {screenWidth <= 1250 ? (
         <div>
           <div className="flex-col items-center mt-40 w-full" id="feed2">
             <div className="flex w-full justify-center">

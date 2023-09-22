@@ -18,7 +18,7 @@ interface Props {
 export function Body({ isDarkMode, screenWidth }: Props) {
   return (
     <div>
-      {screenWidth <= 1024 ? (
+      {screenWidth <= 1250 ? (
         <div className="">
           <div className="flex-col items-center w-full h-full">
           <div className={`flex w-full justify-center`}>
@@ -65,8 +65,8 @@ export function Body({ isDarkMode, screenWidth }: Props) {
                 technology and how it can improve the world.
               </p>
               <div className="flex gap-5 mt-14 justify-center text-xs">
-                <Button><p>CONTACT ME</p></Button>
-                <Button><p>KNOW MORE</p></Button>
+                <Button>CONTACT ME</Button>
+                <Button>KNOW MORE</Button>
               </div>
               <div className="flex mt-8 gap-5">
                 <Image
@@ -91,7 +91,7 @@ export function Body({ isDarkMode, screenWidth }: Props) {
         </div>
       ) : (
         <div
-          className="min-[1080px]:flex justify-between mr-[6rem] mt-40 max-[1080px]:flex-col max-[1080px]:w-full overflow-hidden"
+          className="min-[1080px]:flex justify-between mr-[6rem] mt-40 max-[1080px]:flex-col max-[1080px]:w-full"
           id="feed1"
         >
           <div className="flex justify-between ml-28 min-[1600px]:mt-20 min-[1080px]:mt-0 leading-none max-[1080px]:scale-[1.7] ">
@@ -140,25 +140,26 @@ export function Body({ isDarkMode, screenWidth }: Props) {
                 technology and how it can improve the world.
               </p>
               <div className="flex gap-5 mt-14">
-                <Button>CONTACT ME</Button>
-                <Button>KNOW MORE</Button>
+                
+                <Button><a href="https://api.whatsapp.com/send?phone=5586994783119" target="_blank">CONTACT ME</a></Button>
+                <Button><a href="#feed2">KNOW MORE</a></Button>
               </div>
               <div className="flex mt-8 w-full gap-5">
-                <Image
+                <a href="https://www.instagram.com/kelson_vict0r/" target="_blank"><Image
                   src={instagram}
                   alt="Instagram Logo"
                   className="w-7 transition-all duration-300 hover:scale-125"
-                />
-                <Image
+                /></a>
+                <a href="https://github.com/K3lOli" target="_blank"><Image
                   src={github}
                   alt="Instagram Logo"
                   className="w-7 transition-all duration-300 hover:scale-125"
-                />
-                <Image
+                /></a>
+                <a href="https://www.linkedin.com/in/kelson-victor/" target="_blank"><Image
                   src={linkedin}
                   alt="Instagram Logo"
                   className="w-7 transition-all duration-300 hover:scale-125"
-                />
+                /></a>
               </div>
             </div>
           </div>

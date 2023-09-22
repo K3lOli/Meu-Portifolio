@@ -11,7 +11,7 @@ export function Header({ isDarkMode }: Props) {
         <Item isDarkMode={isDarkMode} link='inicio'>HOME</Item>
         <Item isDarkMode={isDarkMode} link='feed2'>ABOUT ME</Item>
         <Item isDarkMode={isDarkMode} link='feed3'>SHOWCASE</Item>
-        {/* <Item isDarkMode={isDarkMode} link='#feed1'>CONTACT ME</Item> */}
+        <Item isDarkMode={isDarkMode} link='footer'>CONTACT</Item>
       </header>
       </div>
     )
