@@ -22,7 +22,7 @@ export function Footer({ isDarkMode }: Props) {
           </h1>
           <Button>
             <a
-              href="https://api.whatsapp.com/send?phone=5586994783119"
+              href="https://api.whatsapp.com/send?phone=5586981296314"
               target="_blank"
             >
               CONTACT ME

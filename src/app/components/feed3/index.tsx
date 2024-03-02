@@ -26,13 +26,13 @@ export function Body_3({ isDarkMode, screenWidth }: Props) {
                 >
                   ShowCase
                 </h1>
-                <p
+                <div
                   className={`${
                     isDarkMode ? "text-white" : "text-BlueH"
-                  }  text-BlueH text-[1.25rem] font-lSpartan font-[500] h-min mt-8`}
+                  }  text-BlueH text-[1.25rem] font-lSartan font-[500] h-min mt-8`}
                 >
                   Here are some of my projects.
-                </p>
+                </div>
               </div>
             </div>
           </div>
@@ -56,13 +56,13 @@ export function Body_3({ isDarkMode, screenWidth }: Props) {
                 >
                   ShowCase
                 </h1>
-                <p
+                <div
                   className={`${
                     isDarkMode ? "text-white" : "text-BlueH"
                   }  text-BlueH text-[1.25rem] font-lSpartan font-[500] h-min mt-8`}
                 >
                   Here are some of my projects.
-                </p>
+                </div>
               </div>
             </div>
           </div>

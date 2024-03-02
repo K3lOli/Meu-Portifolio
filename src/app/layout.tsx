@@ -23,7 +23,10 @@ export default function RootLayout({
       className={`!scroll-smooth `}
       id="inicio"
     >
-      {children}
+      <body>
+        {children}
+      </body>
+      
     </html>
   );
   // bg-gradient-to-r from-[#9FB4E9] to-[#C6D5FC]]

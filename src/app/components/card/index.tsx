@@ -1,9 +1,9 @@
-import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import Image from "next/image";
 import fotovolt from "../../assets/image 3.svg";
 import siteSolar from "../../assets/image 4.svg";
 import FMS from "../../assets/image 5.svg";
 import padaria from "../../assets/padaria.png";
+import orangePortfolio from "../../assets/orangePortfolio.png"
 import Link from "next/link";
 
 interface Props {
@@ -27,7 +27,7 @@ export function Card({ screenWidth }: Props) {
         >
           <Image src={padaria} alt="" className="rounded h-[276px]" />
           <div className="flex h-52 bg-white rounded p-4 ">
-            <p>
+            <div>
               <p>
                 {" "}
                 Site built to monitor the temperature of solar panels with the
@@ -43,7 +43,7 @@ export function Card({ screenWidth }: Props) {
               >
                 Link para o deploy
               </Link>
-            </p>
+            </div>
           </div>
         </div>
         <div
@@ -53,7 +53,7 @@ export function Card({ screenWidth }: Props) {
         >
           <Image src={fotovolt} alt="" className="rounded" />
           <div className="flex h-52 bg-white rounded p-4 ">
-            <p>
+            <div>
               <p>
                 {" "}
                 Site built to monitor the temperature of solar panels with the
@@ -69,7 +69,7 @@ export function Card({ screenWidth }: Props) {
               >
                 Link para o deploy
               </Link>
-            </p>
+            </div>
           </div>
         </div>
         <div
@@ -79,7 +79,7 @@ export function Card({ screenWidth }: Props) {
         >
           <Image src={siteSolar} alt="" className="rounded" />
           <div className="flex h-52 bg-white rounded p-4 ">
-            <p>
+            <div>
               <p>
                 {" "}
                 Landing page for a solar energy company that offers an easy and
@@ -93,7 +93,7 @@ export function Card({ screenWidth }: Props) {
               >
                 Link para o deploy
               </Link>
-            </p>
+            </div>
           </div>
         </div>
         <div
@@ -103,7 +103,7 @@ export function Card({ screenWidth }: Props) {
         >
           <Image src={FMS} alt="" className="rounded" />
           <div className="flex h-52 bg-white rounded p-4 ">
-            <p>
+            <div>
               <p>
                 The website is being developed as a redesign of the fms website
                 here in my city, improving both the user interface and the API
@@ -116,7 +116,28 @@ export function Card({ screenWidth }: Props) {
               >
                 Link para o deploy
               </Link>
-            </p>
+            </div>
+          </div>
+        </div>
+        <div
+          className={`shadow-slate-700 shadow-2xl rounded transition-all duration-300 ${
+            screenWidth <= 500 ? "scale-90 hover:scale-95" : ""
+          } hover:scale-125 w-[22.5rem]`}
+        >
+            <Image src={orangePortfolio} alt="" className="rounded h-[276px] w-[360px]"/>
+          <div className="flex h-52 bg-white rounded p-4 ">
+            <div>
+              <p>
+              Project developed during the Orange Juice hackathon with the aim of creating a programming project sharing blog.
+              </p>
+              <Link
+                href={"https://hackathon-squad-29-front-end.vercel.app/"}
+                target="_blank"
+                className="text-blue-600 pb-4"
+              >
+                Link para o deploy
+              </Link>
+            </div>
           </div>
         </div>
       </div>
