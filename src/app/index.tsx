@@ -6,7 +6,7 @@ import { AboutMe } from "./components/AboutMe/AboutMe";
 import { ShowCase } from "./components/ShowCase/ShowCase";
 import { DarkModeButton } from "./components/switchThemeButton/SwitchThemeButton";
 import { useEffect, useState } from "react";
-import { Footer } from "./components/footer/Footer";
+import { Footer } from "./components/footer/footer";
 
 export default function Page() {
 
@@ -56,7 +56,7 @@ export default function Page() {
         <Header isDarkMode={isDarkMode} />
         <InitialApresentation isDarkMode={isDarkMode} />
         <AboutMe isDarkMode={isDarkMode} />
-        <ShowCase isDarkMode={isDarkMode} screenWidth={screenWidth} />
+        <ShowCase isDarkMode={isDarkMode} />
         <Footer isDarkMode={isDarkMode} />
       </div>
     </div>
