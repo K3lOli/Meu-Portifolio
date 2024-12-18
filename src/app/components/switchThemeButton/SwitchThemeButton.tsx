@@ -1,7 +1,6 @@
 "use client";
 
 import { SetStateAction } from "react";
-import { useDarkMode } from "../darkMode";
 
 interface Props{
   isDarkMode: boolean,

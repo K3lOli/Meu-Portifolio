@@ -6,24 +6,14 @@ import padaria from "../../assets/padaria.png";
 import orangePortfolio from "../../assets/orangePortfolio.png"
 import Link from "next/link";
 
-interface Props {
-  screenWidth: number;
-}
-
-export function Card({ screenWidth }: Props) {
+export function Projects() {
   return (
     <div>
       <div
-        className={`flex ${
-          screenWidth <= 1250
-            ? "gap-10"
-            : "gap-20 flex flex-wrap justify-center"
-        } mb-64`}
+        className={"flex gap-10 lg:gap-20 flex lg:flex-wrap lg:justify-center my-20 mx-10"}
       >
         <div
-          className={`shadow-slate-700 shadow-2xl rounded transition-all duration-300 ${
-            screenWidth <= 500 ? "scale-90 hover:scale-95" : ""
-          } hover:scale-125 w-[22.5rem]`}
+          className={`shadow-slate-700 shadow-2xl rounded transition-all duration-300 scale-90 hover:scale-95 sm:hover:scale-125 w-[22.5rem]`}
         >
           <Image src={padaria} alt="" className="rounded h-[276px]" />
           <div className="flex h-52 bg-white rounded p-4 ">
@@ -47,9 +37,8 @@ export function Card({ screenWidth }: Props) {
           </div>
         </div>
         <div
-          className={`shadow-slate-700 shadow-2xl rounded transition-all duration-300 ${
-            screenWidth <= 500 ? "scale-90 hover:scale-95" : ""
-          } hover:scale-125 w-[22.5rem]`}
+          className={`shadow-slate-700 shadow-2xl rounded transition-all duration-300 scale-90 hover:scale-95 sm:hover:scale-125 w-[22.5rem]`}
+
         >
           <Image src={fotovolt} alt="" className="rounded" />
           <div className="flex h-52 bg-white rounded p-4 ">
@@ -73,9 +62,7 @@ export function Card({ screenWidth }: Props) {
           </div>
         </div>
         <div
-          className={`shadow-slate-700 shadow-2xl rounded transition-all duration-300 ${
-            screenWidth <= 500 ? "scale-90 hover:scale-95" : ""
-          } hover:scale-125 w-[22.5rem]`}
+          className={`shadow-slate-700 shadow-2xl rounded transition-all duration-300 scale-90 hover:scale-95 sm:hover:scale-125 w-[22.5rem]`}
         >
           <Image src={siteSolar} alt="" className="rounded" />
           <div className="flex h-52 bg-white rounded p-4 ">
@@ -97,9 +84,7 @@ export function Card({ screenWidth }: Props) {
           </div>
         </div>
         <div
-          className={`shadow-slate-700 shadow-2xl rounded transition-all duration-300 ${
-            screenWidth <= 500 ? "scale-90 hover:scale-95" : ""
-          } hover:scale-125 w-[22.5rem]`}
+          className={`shadow-slate-700 shadow-2xl rounded transition-all duration-300 scale-90 hover:scale-95 sm:hover:scale-125 w-[22.5rem]`}
         >
           <Image src={FMS} alt="" className="rounded" />
           <div className="flex h-52 bg-white rounded p-4 ">
@@ -120,15 +105,13 @@ export function Card({ screenWidth }: Props) {
           </div>
         </div>
         <div
-          className={`shadow-slate-700 shadow-2xl rounded transition-all duration-300 ${
-            screenWidth <= 500 ? "scale-90 hover:scale-95" : ""
-          } hover:scale-125 w-[22.5rem]`}
+          className={`shadow-slate-700 shadow-2xl rounded transition-all duration-300 scale-90 hover:scale-95 sm:hover:scale-125 w-[22.5rem]`}
         >
-            <Image src={orangePortfolio} alt="" className="rounded h-[276px] w-[360px]"/>
+          <Image src={orangePortfolio} alt="" className="rounded h-[276px] w-[360px]" />
           <div className="flex h-52 bg-white rounded p-4 ">
             <div>
               <p>
-              Project developed during the Orange Juice hackathon with the aim of creating a programming project sharing blog.
+                Project developed during the Orange Juice hackathon with the aim of creating a programming project sharing blog.
               </p>
               <Link
                 href={"https://hackathon-squad-29-front-end.vercel.app/"}

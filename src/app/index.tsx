@@ -1,12 +1,12 @@
 "use client";
 
-import { Header } from "./components/header/index";
-import { Body } from "./components/feed_1";
-import { Body_2 } from "./components/feed_2";
-import { Body_3 } from "./components/feed3/index";
-import { DarkModeButton } from "./components/darkModeButton";
+import { Header } from "./components/header/HeaderLink";
+import { InitialApresentation } from "./components/InitialApresentation/InitialApresentation";
+import { AboutMe } from "./components/AboutMe/AboutMe";
+import { ShowCase } from "./components/ShowCase/ShowCase";
+import { DarkModeButton } from "./components/switchThemeButton/SwitchThemeButton";
 import { useEffect, useState } from "react";
-import { Footer } from "./components/footer";
+import { Footer } from "./components/footer/Footer";
 
 export default function Page() {
 
@@ -16,10 +16,10 @@ export default function Page() {
 
   const [mounted, setMounted] = useState(false);
   useEffect(() => {
-      setMounted(true)
+    setMounted(true)
   }, [])
 
-    useEffect(() => {
+  useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
     }, 3000);
@@ -42,24 +42,23 @@ export default function Page() {
   return (
     mounted &&
     <div
-      className={`h-full w-full flex max-[1080px]:w-100vw ${
-        isDarkMode
+      className={`h-full w-full flex max-[1080px]:w-100vw ${isDarkMode
           ? "bg-black"
           : "bg-gradient-to-r from-[#9FB4E9] to-[#C6D5FC]]"
-      } overflow-x-hidden`}
+        } overflow-x-hidden`}
     >
-    
-    <div>
-            <DarkModeButton
-              isDarkMode={isDarkMode}
-              setIsDarkMode={setIsDarkMode}
-            />
-            <Header isDarkMode={isDarkMode} />
-            <Body isDarkMode={isDarkMode} screenWidth={screenWidth} />
-            <Body_2 isDarkMode={isDarkMode} screenWidth={screenWidth} />
-            <Body_3 isDarkMode={isDarkMode} screenWidth={screenWidth} />
-            <Footer isDarkMode={isDarkMode} />
-          </div>
-          </div>
+
+      <div>
+        <DarkModeButton
+          isDarkMode={isDarkMode}
+          setIsDarkMode={setIsDarkMode}
+        />
+        <Header isDarkMode={isDarkMode} />
+        <InitialApresentation isDarkMode={isDarkMode} />
+        <AboutMe isDarkMode={isDarkMode} />
+        <ShowCase isDarkMode={isDarkMode} screenWidth={screenWidth} />
+        <Footer isDarkMode={isDarkMode} />
+      </div>
+    </div>
   )
 }

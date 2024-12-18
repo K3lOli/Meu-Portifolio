@@ -1,8 +1,5 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { League_Spartan } from "next/font/google";
-
-
 
 export const metadata: Metadata = {
   title: "Kelson Victor",
@@ -15,8 +12,6 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   
-  // console.log(isDarkMode);
-
   return (
     <html
       lang="en"
@@ -26,8 +21,6 @@ export default function RootLayout({
       <body>
         {children}
       </body>
-      
     </html>
   );
-  // bg-gradient-to-r from-[#9FB4E9] to-[#C6D5FC]]
 }
