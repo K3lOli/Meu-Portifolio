@@ -4,7 +4,7 @@ import { Header } from "./components/header/HeaderLink";
 import { InitialApresentation } from "./components/InitialApresentation/InitialApresentation";
 import { AboutMe } from "./components/AboutMe/AboutMe";
 import { ShowCase } from "./components/ShowCase/ShowCase";
-import { DarkModeButton } from "./components/switchThemeButton/SwitchThemeButton";
+import { DarkModeButton } from "./components/buttons/SwitchThemeButton";
 import { useEffect, useState } from "react";
 import { Footer } from "./components/footer/footer";
 

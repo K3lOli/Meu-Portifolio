@@ -6,7 +6,7 @@ import instagram from "../../assets/skill-icons_instagram.svg";
 import github from "../../assets/fontisto_github.svg";
 import linkedin from "../../assets/devicon_linkedin.svg";
 import { TypeAnimation } from "react-type-animation";
-import { Button } from "../button";
+import { Button } from "../buttons/Button";
 import { Background } from "../background/feed_1/BackgoundInitialSection";
 
 interface Props {

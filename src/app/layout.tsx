@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Kelson Victor",
   description: "Kelson Victor - FullStack",
+  icons: "./icon.png",
 };
 
 export default function RootLayout({

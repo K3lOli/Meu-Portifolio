@@ -1,7 +1,7 @@
 "use client";
 
 import { Background_3 } from "../background/feed_3";
-import { Projects } from "../projects/projects";
+import { Projects } from "./projects/projects";
 
 interface Props {
   isDarkMode: boolean | undefined;

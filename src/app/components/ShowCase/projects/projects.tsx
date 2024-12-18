@@ -1,9 +1,9 @@
 import Image from "next/image";
-import fotovolt from "../../assets/image 3.svg";
-import siteSolar from "../../assets/image 4.svg";
-import FMS from "../../assets/image 5.svg";
-import padaria from "../../assets/padaria.png";
-import orangePortfolio from "../../assets/orangePortfolio.png"
+import fotovolt from "../../../assets/image 3.svg";
+import siteSolar from "../../../assets/image 4.svg";
+import FMS from "../../../assets/image 5.svg";
+import padaria from "../../../assets/padaria.png";
+import orangePortfolio from "../../../assets/orangePortfolio.png"
 import Link from "next/link";
 
 export function Projects() {

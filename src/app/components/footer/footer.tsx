@@ -1,7 +1,7 @@
 import instagram from "../../assets/skill-icons_instagram.svg";
 import github from "../../assets/fontisto_github.svg";
 import linkedin from "../../assets/devicon_linkedin.svg";
-import { Button } from "../button";
+import { Button } from "../buttons/Button";
 import Image from "next/image";
 
 interface Props {
